@@ -1,0 +1,55 @@
+/*CSS reset, don't mind it for now. */
+* {
+    margin: 5px;
+    padding: 5px;
+    /* box-sizing: border-box;*/ 
+    /*... Should I use it here? */
+}
+
+#container {
+    width: 950px;
+    background-color: silver;
+    margin: 0px auto;
+    display: grid; /* two-dimensional grid-based layout*/
+    z-index: -3
+}
+
+#header {
+    height: 150px;
+    background-color: blue;
+    grid-column: 1/4;
+}
+
+#nav_bar {
+    height: 300px;
+    width: 180px;
+    background-color: red;
+}
+
+#main_content {
+    display:flex; /*one-directional flow*/
+    justify-content: space-evenly;/* aligns the flexible container's items when the items do not use all available space*/
+    flex-wrap: wrap; /*break into multiple lines the flex items */
+    height: 360px;
+    width: 725px;
+    padding: 10px;
+    background-color: yellow;
+    z-index:0 ;
+}
+
+.subcontent {
+    display: inline-block; /*with inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.*/
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    margin-right: 13px;
+    padding-right: 13px;
+}
+
+#advertisements {
+    height: 90px;
+    width: 670px;
+    background-color: pink;
+    margin-right: 20px;
+    padding-right: 20px;
+}
