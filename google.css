@@ -1,7 +1,9 @@
-*{
+* {
     padding: 0;
-    margin:0 ;
+    margin: 0;
+    /*border: 5px solid red;*/
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -10,14 +12,15 @@ body {
 }
 
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
 }
 
-p{
-    font-size:14px;
+p {
+    font-size: 14px;
 }
+
 .search {
     height: auto;
     padding: 5px;
@@ -50,53 +53,55 @@ button {
 
 .special-searches {
     background-color: #C7FFD8;
-    min-width:40%;
-    display:flex;
+    min-width: 40%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-    
+
 .help {
     background-color: #A1E3F9;
-    min-width:20%;
-    display:flex;
+    min-width: 20%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left:5px;
+    margin-left: 5px;
 }
 
 .subscribe {
     background-color: #98DED9;
-    width:40%;
-    display:flex;
+    width: 40%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left:5px;
+    margin-left: 5px;
 }
- .subscribe a {
+
+.subscribe a {
     display: block;
     color: blue;
     margin: 2px 0;
     font-size: 13px;
 
- }
+}
 
-.subscribe-action{
+.subscribe-action {
     display: flex;
 }
 
- .email-input {
+.email-input {
     width: 140px;
     margin: 2px 0;
 }
 
-footer{
-    margin:30px;
+footer {
+    margin: 30px;
     text-align: center;
 }
+
 footer p {
     margin-top: 12px;
     font-size: 13px;
