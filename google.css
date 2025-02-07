@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin:0 ;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-size:14px;
+}
+.search {
+    height: auto;
+    padding: 5px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 2px;
+}
+
+.menu {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.search-input {
+    width: 300px;
+}
+
+button {
+    margin-right: 5px;
+}
+
+.menu-item {
+    border: 5px;
+    display: grid;
+}
+
+.special-searches {
+    background-color: #C7FFD8;
+    min-width:40%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+.help {
+    background-color: #A1E3F9;
+    min-width:20%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:5px;
+}
+
+.subscribe {
+    background-color: #98DED9;
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:5px;
+}
+ .subscribe a {
+    display: block;
+    color: blue;
+    margin: 2px 0;
+    font-size: 13px;
+
+ }
+
+.subscribe-action{
+    display: flex;
+}
+
+ .email-input {
+    width: 140px;
+    margin: 2px 0;
+}
+
+footer{
+    margin:30px;
+    text-align: center;
+}
+footer p {
+    margin-top: 12px;
+    font-size: 13px;
+}
