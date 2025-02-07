@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 3px solid green; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    letter-spacing: -0.05em;
+    padding: 10px;
+}
+
+.main {
+    background: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Center it */
+}
+
+.fa-xmark {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: grey;
+}
+
+.twittericon {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+button {
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    background-color: inherit;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: "Google Sans", Arial, sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 10px auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.button-next {
+    background-color: black
+}
+
+.user-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Divider or */
+.divider {
+    margin: 15px 0;
+    position: relative;
+    color: gray;
+
+}
+
+.account {
+    padding: 30px;
+    font-size: 17px;
+    color: grey;   
+}
+.account a {
+    color: lightblue;
+    text-decoration: none;
+}
