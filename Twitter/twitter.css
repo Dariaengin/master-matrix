@@ -64,7 +64,14 @@ button {
 .button-next {
     background-color: black
 }
-
+.break {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
 .user-input {
     width: 80%;
     padding: 10px;
