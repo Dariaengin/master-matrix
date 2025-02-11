@@ -1,0 +1,104 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    background-color: white;
+}
+a{
+    color:blue; ;
+}
+body {
+    background-color: rgb(236, 235, 235);
+    width: 1000px;
+    margin: 0 auto;
+}
+.help{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E6E6E6;
+    padding: 12px;
+}
+
+header a {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 38%;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.questions {
+    width: 20%;
+    padding-top: 30px;
+    background-color: rgb(193, 191, 191);
+    margin-bottom: 50px;
+    display: block;
+}
+
+.search {
+    margin-top: 10px;
+    background-color: gray;
+    padding: 10px;
+}
+
+.feedback {
+    margin-top: 10px;
+}
+.questions a, .feedback a,
+.personal a, .act a,.housing a, .sale a, .acccount a,
+.community a{
+    display: block;
+    background-color:white;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.events,
+.realestate,
+.job {
+    width: 23%;
+}
+
+.events,
+.realestate,
+.sale,
+.job {
+    margin-bottom: 20px;
+}
+
+h2 {
+    background-color: silver;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.discussion,
+.cv,
+.freelance {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color:white;
+    padding: 5px;
+    text-align: center;
+}
