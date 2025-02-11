@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    margin: auto;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    margin-top: 20px;
+}
+
+.nav-bar button {
+    width: 20%;
+    border-radius: 5px 5px 0 0;
+    height: 35px;
+    background-color: #003366;
+    color: white;
+    border: unset;
+}
+
+#welcome-btn {
+    background-color: #34679b;
+    height: 40px;
+}
+
+.padding-100 {
+    padding: 0 100px;
+}
+
+.lineblue {
+    width: 100%;
+    height: 30px;
+    background-color: #34679b;
+}
+
+main {
+    display: flex;
+    justify-items: auto;
+    margin-top: 10px;
+}
+
+aside {
+    margin-right: 10px;
+}
+
+aside .box {
+    width: 200px;
+    background: #ddd;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+aside .box-header {
+    background: #ccc;
+    padding: 10px;
+    font-weight: bold;
+}
+
+aside .box-header a {
+    margin-left: 70px;
+}
+
+.box-body {
+    padding-left: 15px;
+    margin: 10px 0px;
+}
+
+.box-body p span {
+    margin-right: 10px;
+}
+
+/* .box-body div {
+    text-align: right;
+  } */
+.box-body button {
+    margin-bottom: 5px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.card-img {
+    width: 50%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    width: 60%;
+}
+
+.money {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sendrequest {
+    margin: 10px 0;
+}
+
+.sendrequest a {
+    color: rgb(52, 94, 246);
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.sendrequest p {
+    font-size: 0.7rem;
+}
+
+.paypalbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: rgb(22, 107, 156);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 50%;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: rgb(27, 146, 244);
+}
+
+.paypalbutton:hover {
+    background-color: rgb(27, 146, 244);
+}
+
+.members{
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.signup {
+    padding: 10px;
+    background-color: rgb(244, 244, 201);
+    border: 1px solid rgb(172, 172, 76);
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.signup a {
+    color: rgb(52, 94, 246);
+    font-weight: 600;
+}
+
+.spotlight h3{
+    background-color: rgb(228, 225, 225);
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 5px;
+    color: #222;
+}
+
+.spotlight-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.spotlight-img {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+.paypal-container {
+    column-gap: 10px;
+    margin: 10px 0px;
+}
+
+
+.paypal-container div:last-child>a {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.paypal-container a {
+    color: rgb(52, 94, 246);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.paypal-container a:hover,
+.signup a:hover {
+    color: rgb(27, 146, 244);
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer li {
+    list-style: none;
+    font-size: 1rem;
+    margin: 50px 0 20px;
+}
+
+footer ul li a {
+    color: rgb(52, 94, 246);
+    margin-top: 50px;
+    padding: 0 10px;
+    border-right: 1px solid rgb(16, 93, 217);
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+footer ul li:last-child a {
+    border-right: none;
+}
+
+.footer {
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+footer a {
+    color: rgb(52, 94, 246);
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
