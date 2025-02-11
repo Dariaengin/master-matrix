@@ -75,3 +75,9 @@ form{
 footer{
     font-size: 15px
 }
+/*.user-details{
+    display: flex;*/
+
+    .woman1{
+        display: flex;
+    }
