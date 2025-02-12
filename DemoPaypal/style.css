@@ -50,7 +50,7 @@ body {
 
 main {
     display: flex;
-    justify-items: auto;
+    justify-items: center;
     margin-top: 10px;
 }
 
