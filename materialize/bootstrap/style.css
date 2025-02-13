@@ -1,38 +1,31 @@
 body {
-    background-color: #FFFDEC
+    background-color: #f8f9fa;
+    max-width: 80%;
 }
 
-h1, h2, h3, h4 {
-    color: #D17D98;
-}
-
-.card {
-    margin: 20px 0;
-    padding: 15px;
-}
-
-.collection a {
-    color: #D17D98;
-    text-decoration: none;
-    margin-top: 40px;
-}
-/* .data {
-    margin-top:40em;
-    padding:10em;
+.navbar {
+    margin-bottom: 20px;
     
-} */
-/* aside{
-    display: flex;
-    flex-direction: column;
-} */
-.inputdata input, .inputdata select {
-    background-color: #ffffff;
-    border-radius: 5px;
-    padding: 5px;
+}
+.navbar-brand {
+    color: #A3D1C6 !important; /* Change text color */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+.card {
+    border: none;
+    box-shadow: 0px 4px 8px #A3D1C6;
 }
 
-button {
-    background-color: #D17D98;
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: bold; 
+    background-color: #A3D1C6;
     color: white;
     border-radius: 5px;
     padding: 10px 15px;
@@ -43,5 +36,14 @@ footer {
     padding: 10px 0;
     color: white;
     text-align: center;
-    background-color:#D17D98
+    background-color: #A3D1C6
+}
+
+.btn-custom {
+    background-color: #A3D1C6 !important;
+    color: #ffffff !important;
+    /* Ensures text visibility */
+    border-radius: 5px;
+    /* Optional: Rounded corners */
+    transition: background-color 0.3s ease;
 }
