@@ -1,6 +1,5 @@
 body {
     background-color: #FFFDEC
-    font-family: Arial, sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -17,11 +16,15 @@ h1, h2, h3, h4 {
     text-decoration: none;
     margin-top: 40px;
 }
-.data {
+/* .data {
     margin-top:40em;
     padding:10em;
-}
-
+    
+} */
+/* aside{
+    display: flex;
+    flex-direction: column;
+} */
 .inputdata input, .inputdata select {
     background-color: #ffffff;
     border-radius: 5px;
