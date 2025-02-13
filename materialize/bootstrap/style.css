@@ -8,7 +8,7 @@ body {
     
 }
 .navbar-brand {
-    color: #A3D1C6 !important; /* Change text color */
+    color: #A3D1C6 !important; 
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
@@ -41,9 +41,7 @@ footer {
 
 .btn-custom {
     background-color: #A3D1C6 !important;
-    color: #ffffff !important;
-    /* Ensures text visibility */
+    color: #ffffff; 
     border-radius: 5px;
-    /* Optional: Rounded corners */
     transition: background-color 0.3s ease;
 }
