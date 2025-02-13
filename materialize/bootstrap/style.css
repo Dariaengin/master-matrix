@@ -12,10 +12,19 @@ h1, h2, h3, h4 {
 }
 
 .collection a {
-    scolor: #D17D98;
+    color: #D17D98;
     text-decoration: none;
     margin-top: 40px;
 }
+/* .data {
+    margin-top:40em;
+    padding:10em;
+    
+} */
+/* aside{
+    display: flex;
+    flex-direction: column;
+} */
 .inputdata input, .inputdata select {
     background-color: #ffffff;
     border-radius: 5px;
