@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize Styled Page</title>
+    
+    <!-- labrary with pop-ups etc. for CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- allows us to add different icons to our project -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="container">
+    <header>
+        <h1 class="center-align">Heading One</h1>
+    </header>
+
+    <section>
+        <div class="card">
+            <div class="card-content">
+                <h2 class="card-title">Heading Two</h2>
+                <small>Posted by Daria on 04 Feb 2025</small>
+                <p>Lorem ipsum <strong>dolor</strong> sit amet consectetur <em>adipisicing</em> elit. <cite>Facilis,
+                        ullam?</cite></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae libero assumenda
+                    ducimus repellat molestiae?</p>
+            </div>
+        </div>
+    </section>
+
+    <aside>
+        <nav>
+            <div class="nav-bar">
+                <a href="#" class="nav">Menu</a>
+            </div>
+            <ul class="collection">
+                <li class="nav1"><a href="#">home</a></li>
+                <li class="nav2"><a href="#">about me</a></li>
+                <li class="nav3"><a href="#">extra</a></li>
+            </ul>
+        </nav>
+    </aside>
+<div class="data">
+    <table class="ddata">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Daria Engin</td>
+                <td>email@g.com</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>B Engin</td>
+                <td>emailB@g.com</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    <form class="inputs">
+        <div class="inputdata">
+            <input type="text" id="first_name">
+            <label for="first_name">First Name</label>
+        </div>
+        <div class="inputdata">
+            <input type="text" id="last_name">
+            <label for="last_name">Last Name</label>
+        </div>
+        <div class="inputdata">
+            <input type="email" id="email">
+            <label for="email">Email</label>
+        </div>
+        <div class="inputdata">
+            <select>
+                <option value="" disabled selected>Choose your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <label>Gender</label>
+        </div>
+        <div class="inputdata">
+            <input type="number" id="age" value="31">
+            <label for="age">Age</label>
+        </div>
+        <div class="inputdata">
+            <input type="date" id="birthday">
+            <label for="birthday">Birthday</label>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit">Click here</button>
+    </form>
+
+    <div class="center-align">
+        <img src="flower.png" alt="HTML logo" class="responsive-img" width="300">
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p class="center-align">Copyright &copy; 2025, Daria</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            M.FormSelect.init(elems);
+        });
+    </script>
+</body>
+
+</html>

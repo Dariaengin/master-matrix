@@ -1,0 +1,44 @@
+body {
+    background-color: #FFFDEC
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: #D17D98;
+}
+
+.card {
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.collection a {
+    color: #D17D98;
+    text-decoration: none;
+    margin-top: 40px;
+}
+.data {
+    margin-top:40em;
+    padding:10em;
+}
+
+.inputdata input, .inputdata select {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button {
+    background-color: #D17D98;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+}
+
+footer {
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    background-color:#D17D98
+}
