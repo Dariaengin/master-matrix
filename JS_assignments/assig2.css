@@ -1,0 +1,22 @@
+body.bg-dark {
+    background-color: #333;
+    color: white;
+}
+#my-form {
+    padding: 20px;
+    background-color: lightgray;
+}
+.btnDari {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul.items li {
+    list-style: none;
+    padding: 5px;
+    background-color: #f4f4f4;
+    margin-bottom: 5px;
+}
