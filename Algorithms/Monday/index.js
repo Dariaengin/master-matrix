@@ -1,12 +1,27 @@
+
+
 for (let i = 1; i <= 135; i++) {
     console.log(i);
 }
+    //. Print Odd Numbers 1 - 135
+// Start the program.
+// Initialize a variable i to 1 (this will act as the counter).
+// Loop while i is not divisible by 2:
+// Print the value of i.
+// Increment i by 1.
+
 for (let i = 1; i <= 135; i++)
     if(i %2 !== 0) {
     console.log(i);
 }
 let sum = 0;
-
+// /Write a program that will print all the numbers from 1 to 135 AND the sum of the numbers that have been printed so far. Your output should look similar to this
+// Number is: 0 Sum: 0
+// Number is: 1 Sum: 1
+// Number is: 2 Sum: 3
+// define a variable
+// print all numbers from 1 to 135
+// sum up the numbers
 for (let i = 0; i <= 135; i++) {
     sum += i;
     console.log(`Number is: ${i} Sum: ${sum}`);
