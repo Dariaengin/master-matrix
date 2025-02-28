@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pomodoro</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="init-container" class="init-time">
+            <input id="second-input" type="number" min="1" max="59" placeholder="second">
+            <button type="button" id="init-new-clock-btn">Create Pomodoro clock</button>
+        </div>
+        <div id="pomodoro-container" class="pomodoro-clock hidden">
+            <div id="second"></div>
+            <div class="clock-buttons">
+                <button type="button">Start</button>
+                <button type="button">Pause</button>
+                <button type="button" id="stop">Stop</button>
+</body>
+
+</html>
