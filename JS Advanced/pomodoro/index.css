@@ -26,3 +26,9 @@ button input {
     display: flex;
     gap: 30px;
 }
+.clock-buttons button{
+    width:30%;
+}
+.hidden{
+    display: none;
+}
