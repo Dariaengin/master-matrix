@@ -1,0 +1,38 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    max-width: 600px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+   
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+hr {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.red-text {
+    color: red;
+}
