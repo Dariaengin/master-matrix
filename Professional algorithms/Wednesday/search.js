@@ -5,6 +5,8 @@
 // Replace before with after in the sentence.
 // Return the modified sentence.
 
+
+
 function myReplace(str, before, after) {
     // Check if the first letter of before is uppercase
     if (before[0] === before[0].toUpperCase()) {
@@ -46,3 +48,24 @@ function myReplace(str, before, after) {
     replaceWord('A quick brown fox jumped over the lazy dog', 'brown', 'red')
   ); // A quick red fox jumped over the lazy dog
   
+//define the function using 3 parameters
+//transform string to an array using string method
+//for loop to check the array
+//condition to check if given word has a match in the array
+//check if the first letter is capital. İF true replace the word with capital letter. 
+// //İf false replace the word wih low letter
+//return a string using array
+let st= 'A quick brown fox jumped over the lazy dog'
+st.toUpperCase
+function searchAndReplace (str, before, after){
+    let array=String.trim().split(' ')
+    for (let i=0; i<array.length; i++){
+        if (Arr[i].toLowerCase() === before.toLowerCase()) {
+            if(arr[i][0]==arr[i][0].toUpperCase()){
+                (arr[i][0]==arr[i][0].toUpperCase()+after.slice(1))
+            }
+        }
+    }
+        
+
+}
