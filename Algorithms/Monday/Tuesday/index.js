@@ -15,7 +15,7 @@ console.log(sum);
 
 let newArray = []
 let x = [2, 1, 6, 4, -7]
-for (let i = 0; i <= x.length; i++) {
+for (let i = 0; i < x.length; i++) {
     newArray.unshift(x[i])
 }
 console.log(newArray);
@@ -65,3 +65,4 @@ for (let i=0; i<=e.length; i++ ){
     if(word == e[i])
         e[i]=st
 } console.log(e)
+
