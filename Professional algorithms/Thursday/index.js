@@ -15,7 +15,7 @@
 
 // Define a function that takes a given number as a parameter
 // Define a variable that holds a sum equal to 0
-// For loop to iterate through the array from i=2 to the given number including
+// For loop to iterate through the array from i=2 to the given number 
 // Set boolean variable isPrime as a true (because 2 is a prime number)
 // Another For loop to iterate through the array from j equal to 2 till i
 // Condition to check if the current number is divisible to others
