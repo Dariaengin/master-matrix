@@ -25,7 +25,7 @@ $(document).ready(function () {
         });
     });
 
-    // Fetch breeds from API and populate dropdown
+    // Fetch breeds from API
     function fetchBreeds() {
         $.ajax({
             url: "https://api.thedogapi.com/v1/breeds",
