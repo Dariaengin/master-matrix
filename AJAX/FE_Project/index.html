@@ -20,12 +20,23 @@
 </head>
 <body>
 
+    <!-- Random Dog Button -->
     <div class="container text-center">
-        <h1 class="fetchdog">🐶 Fetch a Random Dog</h1>
-        <button id="getDog" class="btn btn-primary dog-btn">Get Random Dog</button>
-        <div id="dogContainer" class="dog-container"></div>
+        <h1 class="fetchdog">Fetch a Random Dog</h1>
+        <button id="getDog" class="btn btn-primary">Get Random Dog</button>
+        <div id="dogContainer" class="dog-container mt-3"></div>
     </div>
-    <script src="index.js"></script>
 
+    <!-- Select Breed Section -->
+    <div class="container text-center mt-5">
+        <h3>Select a Dog Breed</h3>
+        <select id="breedSelect" class="form-select w-50 mx-auto mb-3">
+            <option value="">Select a breed</option>
+        </select>
+        <button id="getBreedDog" class="btn btn-success">Get Selected Breed</button>
+        <div id="breedDogContainer" class="dog-container mt-3"></div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
