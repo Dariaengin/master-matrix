@@ -52,5 +52,21 @@ Temporary Items
 # Ignore all local history of files
 .history
 .ionide
+# Ignore Node.js dependencies (includes Express & Mongoose)
+node_modules/
+
+# Ignore environment variables
+.env
+
+# Ignore log files
+logs/
+*.log
+
+# Ignore build and compiled files
+dist/
+build/
+
+# Ignore system files (Mac-specific)
+.DS_Store
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos
