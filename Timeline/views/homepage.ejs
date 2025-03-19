@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('head') %>
+  <body
+    class="container-fluid d-flex flex-column justify-content-start min-vh-100 bg-light text-black"
+    style="max-width: 900px"
+  >
+
+    <header class="d-flex flex-row align-items-center border-bottom mb-3">
+      <h1 class="fs-4 fw-bold mt-5 mb-4">Timeline</h1>
+    </header>
+    
+    <main class="container flex-grow-1">
+      <ul class="list-unstyled">
+        <% if(postList.length > 0){ %> 
+        <% postList.forEach(post=>{ %>
+        <li class="mb-1">
+          <span class="fw-bold"> <%= post.name %></span> - <%= post.createdAt %>
+        </li>
+        <li class="mb-4">
+          <p class="ms-4">
+            <%= post.message %> <%= post.message %> <%= post.message %> <%=
+            post.message %> <%= post.message %>
+          </p>
+        </li>
+        <% }) %>
+        <% } %>
+      </ul>
+    </main>
+
+    <footer
+      class="mt-auto d-flex flex-row justify-content-center align-items-center m-3"
+    >
+       <%- include('footer') %>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../public/script.js" defer></script>
+  </body>
+</html>
