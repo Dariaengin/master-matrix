@@ -32,3 +32,6 @@ const homePage = (req, res) => {
     homePage,
     notFoundPage,
   };
+  exports.getUsers = (req, res) => {
+    res.json({ message: "User list fetched successfully!" });
+};

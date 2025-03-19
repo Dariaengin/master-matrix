@@ -11,17 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dariaengin/master-matrix/tree/main"
-  },
-  "author": "Dariaengin",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Dariaengin/master-matrix/tree/main/timeline/issues"
-  },
-  "homepage": "https://github.com/Dariaengin/master-matrix/tree/main/timeline#readme",
-  "dependencies": {
-    "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "url": "git+https://github.com/Dariaengin/master-matrix/tree/main/Timeline"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
