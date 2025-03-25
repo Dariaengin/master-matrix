@@ -7,5 +7,6 @@ route.get('/', userController.homePage);
 route.get('/*', userController.notFoundPage);
 route.post('/add-new-user', userController.addNewUser);
 
+
 // route.delete('/delete-user', userController.deleteUser);
 module.exports = route;

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+  <body
+    class="container-fluid d-flex flex-column justify-content-start min-vh-100 bg-light text-black"
+    style="max-width: 900px"
+  >
+    <!-- Header section -->
+    <header class="d-flex flex-row align-items-center border-bottom mb-3">
+      <h1 class="fs-4 fw-bold mt-5 mb-4">Timeline</h1>
+    </header>
+    <!-- Main content section -->
+    <main class="container flex-grow-1">
+      <div class="d-flex flex-column align-items-center">
+        <form
+          action="/add-new-post"
+          method="POST"
+          class="d-flex flex-column justify-content-center mb-5"
+          style="max-width: 450px"
+        >
+          <label for="name">Name</label>
+          <input
+            name="name"
+            type="text"
+            placeholder="Input your name there..."
+            class="mb-3"
+            minlength="4"
+            maxlength="15"
+            required
+          />
+          <label for="createdAt">Created at</label>
+          <input name="createdAt" type="date" class="mb-3" required />
+          <label for="message">Post a message</label>
+          <textarea
+            name="message"
+            placeholder="Input your message there"
+            cols="45"
+            rows="3"
+            class="mb-3"
+            minlength="25"
+            maxlength="300"
+            required
+          ></textarea>
+          <button class="btn btn-primary">Post a message</button>
+        </form>
+      </div>
+
+      <ul class="list-unstyled">
+        <% if(postList.length > 0){ %> <% postList.forEach(post=>{ %>
+        <li class="mb-1">
+          <span class="fw-bold"> <%= post.name %></span> - <%= post.createdAt %>
+        </li>
+        <li class="mb-4">
+          <p class="ms-4"><%= post.message %></p>
+        </li>
+        <% }) %> <% } %>
+      </ul>
+    </main>
+    <!-- Footer section -->
+    <%- include('./partials/footer') %>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../public/script.js" defer></script>
+  </body>
+</html>

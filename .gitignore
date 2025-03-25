@@ -68,5 +68,6 @@ build/
 
 # Ignore system files (Mac-specific)
 .DS_Store
+.env.*
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos
