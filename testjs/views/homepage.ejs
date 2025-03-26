@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('head') %>
+  <body
+    class="container-fluid d-flex flex-column justify-content-start min-vh-100 bg-light text-black"
+    style="max-width: 900px"
+  >
+
+    <header class="d-flex flex-row align-items-center border-bottom mb-3">
+      <h1 class="fs-4 fw-bold mt-5 mb-4">test</h1>
+    </header>
+    <div class="add-new-user-form">
+      <form action="/add-new-user" method="POST">
+        <input name="userName" type="text" placeholder="username" />
+        <input name="email" type="email" placeholder="email" />
+        <input name="password" type="password" placeholder="password" />
+        <button type="submit">Add User</button>
+      </form>
+      
+   
+    <footer class="mt-auto d-flex flex-row justify-content-center align-items-center m-3"
+    >
+       <%- include('footer') %>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../public/script.js" defer></script>
+  </body>
+</html>
