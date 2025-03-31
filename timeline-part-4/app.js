@@ -14,11 +14,13 @@ app.use(methodOverride('_method'));
 app.use('/public', express.static('public'));
 app.set('view engine', 'ejs');
 
+// 👇 API routes
+app.use('/api', apiRoutes);
+
 // 👇 Web routes
 app.use('/', routes);
 
-// // 👇 API routes
-// app.use('/api', apiRoutes);
+
 
 app.listen(port, () =>
   console.log(`✅ Server is running on http://localhost:${port}`)

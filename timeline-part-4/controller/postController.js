@@ -64,31 +64,32 @@ const deletePost = (req, res) => {
     });
 };
 
-const updatePost = (req, res) => {
-  // Get post info from DB
+const editPostForm = (req, res) => {
   postModel
     .findById(req.params.postId)
     .then((post) => {
-      res.render('edit-form', {
-        post,
-      });
+      res.render('edit-form', { post }); // ✅ PASSING post to the view
     })
     .catch((err) => {
       console.log(err);
+      res.status(500).send('Failed to load edit form');
+    });
+};
+const updatePost = (requestObject, response) => {
+  const postId = requestObject.params.postId;
+  const updatedData = requestObject.body;
+
+  postModel
+    .findByIdAndUpdate(postId, updatedData, { new: true, runValidators: true })
+    .then(() => {
+      response.redirect('/'); // Redirect to homepage or post view
+    })
+    .catch((err) => {
+      console.log('❌ Error updating post:', err);
+      response.status(500).send('Internal Server Error' + err);
     });
 };
 
-const editPostForm = (req, res) => {
-  res.render('edit-form', {});
-  // postModel
-  //   .findByIdAndUpdate(req.params.postId, req.body)
-  //   .then(() => {
-  //     res.redirect('/');
-  //   })
-  //   .catch((err) => {
-  //     console.log(err);
-  //   });
-};
 
 const notFoundPage = (req, res) => {
   res.render('404page');
