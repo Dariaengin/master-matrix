@@ -2,6 +2,7 @@
 const postModel = require('../models/postModel');
 const commentModel = require('../models/commentModel');
 
+
 const homePage = (req, res) => {
   postModel
     .find()//Fetches all posts from the MongoDB posts collection.
@@ -78,14 +79,15 @@ const updatePost = (req, res) => {
 };
 
 const editPostForm = (req, res) => {
-  postModel
-    .findByIdAndUpdate(req.params.postId, req.body)
-    .then(() => {
-      res.redirect('/');
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  res.render('edit-form', {});
+  // postModel
+  //   .findByIdAndUpdate(req.params.postId, req.body)
+  //   .then(() => {
+  //     res.redirect('/');
+  //   })
+  //   .catch((err) => {
+  //     console.log(err);
+  //   });
 };
 
 const notFoundPage = (req, res) => {

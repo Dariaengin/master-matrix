@@ -28,7 +28,7 @@
   >
     <p class="ms-4 me-4"><%= comment.comment %></p>
     <form
-      action="/delete/post/comment/<%= comment._id %>/<%= post._id %>"
+      action="/delete/post/comment/<%= comment._id %>/<%= post._id %>?_method=DELETE"
       method="POST"
     >
       <button class="btn btn-danger align-self-center">Delete</button>

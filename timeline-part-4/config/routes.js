@@ -5,11 +5,12 @@ const route = express.Router();
 
 route.get('/', postController.homePage);
 route.get('/*', postController.notFoundPage);
-route.post('/delete/post/:postId', postController.deletePost);
-route.post('/update/post/:postId', postController.updatePost);
+route.delete('/delete/post/:postId', postController.deletePost);
 route.post('/edit-form/:postId', postController.editPostForm);
+route.patch('/update/post/:postId', postController.updatePost);
+
 route.post('/post/add/new-comment/:postId', commentController.addComment);
-route.post(
+route.delete(
   '/delete/post/comment/:commentId/:postId',
   commentController.deleteComment
 );
