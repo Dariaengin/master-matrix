@@ -77,7 +77,7 @@ const editPostForm = (req, res) => {
 };
 const updatePost = (requestObject, response) => {
   const postId = requestObject.params.postId;
-  const updatedData = requestObject.body;
+  const updatedData = requestObject.body;//we request the name tag of EditPostForm input here
 
   postModel
     .findByIdAndUpdate(postId, updatedData, { new: true, runValidators: true })
@@ -95,7 +95,7 @@ const notFoundPage = (req, res) => {
   res.render('404page');
 };
 
-module.exports = {
+module.exports = {//need to export all functions mentioned above
   homePage,
   addNewPost,
   deletePost,

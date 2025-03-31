@@ -1,16 +1,13 @@
-const dotenv = require('dotenv');
-dotenv.config();
-
-const mongoose = require('mongoose');
-const DB_URI= process.env.MONGO_URI;
-
-mongoose.connect(process.env.MONGO_URI)
-
+const dotenv = require('dotenv');//add .env file where is store db link and password
+dotenv.config();//this will load the environment variables from .env into process.env
+const mongoose = require('mongoose');//call mongoose
+const DB_URI= process.env.MONGO_URI; //link to our DB
+mongoose.connect(process.env.MONGO_URI)// connect to DB
 mongoose
   .connect(DB_URI)
-  .then(() => {
+  .then(() => {//if connected 
     console.log('DB is connected');
   })
-  .catch((err) => {
+  .catch((err) => {//iif not connected throw error
     console.log(' MongoDB connection error: ', err);
   });
