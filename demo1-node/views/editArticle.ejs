@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Article</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 600px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 20px;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #333;
+      font-size: 1rem;
+    }
+    .back-link {
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <a href="/" class="back-link">Back</a>
+<form action="/edit/article/<%= article._id %>" method="POST">
+    <label for="title">Title :</label>
+    <input  value="<%= article.title %>" type="text" id="title" name="title" required />
+
+    <label for="content">Article :</label>
+    <textarea id="content" name="content" rows="10" required><%= article.content %><</textarea>
+
+    <button type="submit">Save</button>
+  </form>
+</body>

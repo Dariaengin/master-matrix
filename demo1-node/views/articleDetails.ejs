@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= article.title %>
+    </title>
+</head>
+
+<body>
+    <h1>
+        <%= article.title %>
+    </h1>
+    <p>
+        <%= article.content %>
+    </p>
+    <title><a href="/article/:id">article head</a> </title>
+    <form action="/delete/article/<%= article._id %>" method="POST"
+        onsubmit="return confirm('Are you sure you want to delete this article?');">
+        <button type="submit">Delete</button>
+    </form>
+
+    <a href="/" class="back-link">Back</a>
+
+    <a href="/edit/article/<%= article._id %>" class="edit-link">Edit Article</a>
+
+
+</body>
+
+</html>

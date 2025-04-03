@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Article</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 600px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 20px;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #333;
+      font-size: 1rem;
+    }
+    .back-link {
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <a href="/add/article" class="new-article">Add new article</a>
+  
+  
+<% if (articles.length > 0) { %>
+  <h2>Articles</h2>
+  <ul>
+    <% articles.forEach(article => { %>
+      <li>
+       <h3><a href="/article/<%= article._id %>" class=""><%= article.title %></a></h3>
+        <p><%= article.content %></p>
+      </li>
+    <% }) %>
+  </ul>   
+<% } %>
+</body>
+</html>
