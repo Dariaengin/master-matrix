@@ -11,11 +11,4 @@ router.get('/dashboard', authController.showDashboard);
 
 router.post('/register', authController.registerUser);
 
-// router.get('/welcome', (req, res) => {
-//     res.render('welcome');
-// });
-// router.get('/logout', (req, res) => {
-//     res.redirect('/login');
-// }); 
-
 module.exports = router;
