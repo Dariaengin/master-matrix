@@ -1,0 +1,18 @@
+<!-- views/dashboard.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+  <h1>Welcome, <%= user.firstName %>!</h1>
+  <h2>User Info</h2>
+  <ul>
+    <li>First Name: <%= user.firstName %></li>
+    <li>Last Name: <%= user.lastName %></li>
+    <li>Email Address: <%= user.email %></li>
+    <li>Password: Not this time! 😉</li>
+  </ul>
+  <a href="/logout">Log out</a>
+</body>
+</html>
