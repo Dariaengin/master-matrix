@@ -1,20 +1,18 @@
-
 import React from 'react';
-
-import Header from './components/layout/Header';
-import HomePage from './components/pages/HomePage';
-import Footer from './components/layout/Footer';
+import Homepage from './components/pages/homepage'; // Capital H
 
 import './App.css';
 
 function App() {
   return (
     <div className='app-container'>
-      <Header />
+      <header className='header-style'>
+        <h1>Foursquare Demo</h1>
+        <h2>Find your song</h2>
+      </header>
       <main className='main-style'>
-        <HomePage />
+        <Homepage /> {/* Capital H here too */}
       </main>
-      <Footer />
     </div>
   );
 }

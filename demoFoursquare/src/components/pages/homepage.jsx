@@ -21,10 +21,10 @@ const HomePage = () => {
     }
   };
 
-  return (
-    <div className='display-slyles'>
+  return (//filteredAlbums is an array of albums
+    <div className='display-styles'>
       <Searchingbar onSearch={handleUserSearch} />
-      {filteredAlbums.length ? <h2>Search results</h2> : null}
+      {filteredAlbums.length ? <h2>Search results</h2> : null} 
       <ul>
         {filteredAlbums?.map((album) => (
           <li key={album.id}>{album.title}</li>
